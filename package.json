@@ -1,0 +1,25 @@
+{
+  "name": "tetscafe-course",
+  "version": "1.0.0",
+  "description": "automation testing with testcafe",
+  "main": "script.js",
+  "scripts": {
+    "test:chrome": "testcafe chrome  ./tests",
+    "test:chrome:headless": "testcafe chrome:headless ./tests",
+    "test:chrome:mobile": "testcafe chrome:emulation:device=iphone X ./tests",
+    "test:safari": "testcafe safari ./tests",
+    "test:firefox": "testcafe firefox ./tests"
+
+  },
+  "keywords": [
+    "TestCafe",
+    "Testing",
+    "Automation"
+  ],
+  "author": "os.spirit",
+  "license": "ISC",
+  "dependencies": {
+    "prettier": "^2.3.2",
+    "testcafe": "^1.15.2"
+  }
+}
