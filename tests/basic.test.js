@@ -64,4 +64,7 @@ test('Same test with const for selectors + screenshot of the fullscreen', async 
     await t.click (submitButton),
     await t.expect(articleText).contains("Thank you, Bob!")
     
+    
+
+    
     });
