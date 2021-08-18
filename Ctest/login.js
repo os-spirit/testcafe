@@ -24,6 +24,7 @@ test('User connot login with invalid credentials', async t =>{
 })
 
 test('User can login into app', async t =>{
+    await t.setTestSpeed(0.1)
     const signInButton = Selector('#signin_button') // find selector for sign in button and add to the const
     await t.click(signInButton)
 
@@ -55,3 +56,4 @@ test('User can login into app', async t =>{
 
 
 })
+

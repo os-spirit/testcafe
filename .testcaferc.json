@@ -1,5 +1,5 @@
 {
     "screenshotPath": "/.screenshots",
     "screenshotPathPattern": "${DATE}_${TIME}/${FIXTURE}.png",
-    "quarantineMode": true,
+   
    }
