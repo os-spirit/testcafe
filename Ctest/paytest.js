@@ -1,17 +1,20 @@
 import { Selector } from "testcafe";
 
+import { login } from '../helper';
+
 fixture('Payment testing').page('http://zero.webappsecurity.com/index.html')
 
 
 test.before(async t =>{
-    const signInButton = Selector('#signin_button') // find selector for sign in button and add to the const
-    await t.click(signInButton)
-    const usernameInput = Selector('#user_login')
-    const userpasswordInput = Selector ('#user_password')
-    await t.typeText(usernameInput, 'username', { paste: true})
-    await t.typeText(userpasswordInput, 'password', {paste: true})
-    const submitButton = Selector ('.btn-primary')
-    await t.click(submitButton)
+    // const signInButton = Selector('#signin_button') // find selector for sign in button and add to the const
+    // await t.click(signInButton)
+    // const usernameInput = Selector('#user_login')
+    // const userpasswordInput = Selector ('#user_password')
+    // await t.typeText(usernameInput, 'username', { paste: true})
+    // await t.typeText(userpasswordInput, 'password', {paste: true})
+    // const submitButton = Selector ('.btn-primary')
+    // await t.click(submitButton)
+    await login ('username', 'password')
 })
 ('User payment', async t =>{
     //Selector
